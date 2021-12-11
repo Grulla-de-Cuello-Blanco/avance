@@ -73,33 +73,37 @@
          font-weight: 500;
          font-style: normal;
          }
-         /* definiré un tamaño del título de primer nivel (h1) que se ajuste según el viewport width --> https://www.yunbitsoftware.com/blog/2017/06/22/viewport-units-css-que-es/ */
          h1 {
-         font-size: calc(2rem + 2vw); /*Gibón de manos blancas necesita que sea 2vw, el original era 3*/
+            font-size: calc(2rem + 2vw); /*Gibón de manos blancas necesita que sea 2vw, el original era 3*/
          }
-         /* repetiré el truco anterior con el título de segundo nivel (h2), que, a diferencia del anterior, puedo ocupar varias veces en la misma página */
          h2 {
-         font-size: calc(0.75rem + 1vw);
+            font-size: calc(0.75rem + 1vw);
          }
          /* usaré el ">" entre el título se segundo nive (h2) y el lapso en la misma línea (span) --> https://techbrij.com/css-selector-adjacent-child-sibling */
          h2 > span {
-         background: #601514;
-         color: #fff;
+            background: #601514;
+            color: #fff;
          }
-         /* sigamos con el título de tercer nivel (h3) */
          h3 {
-         font-size: calc(1.5rem + 1vw);
+            font-size: calc(1.5rem + 1vw);
          }
+         
          header{
-         background:linear-gradient(rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 1) 100%), url(cositas/cabecera.jpg);
-         background-size: auto 100%;
-         background-position: left top;
-         background-repeat: no-repeat;
-         padding-top: 25vh;
+            background:linear-gradient(rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 1) 100%), url(cositas/cabecera.jpg);
+            background-size: auto 100%;
+            background-position: left top;
+            background-repeat: no-repeat;
+            padding-top: 25vh;
          }
+         
+         aside{
+            background: linear-gradient(#fff, #e7e8e9);
+         }
+         
          span[data-bs-toggle="popover"]{
-         cursor: pointer;
+            cursor: pointer;
          }
+         
       </style>
       <!--ESTO SERVIRÁ PARA COMPARAR UN ANTES Y UN DESPUÉS-->
       <link href="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.css" rel="stylesheet" />
